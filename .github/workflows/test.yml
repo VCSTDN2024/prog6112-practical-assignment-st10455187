@@ -33,7 +33,9 @@ jobs:
           -d build/classes \
           $(find src -name "*.java") $(find test -name "*.java")
 
-- name: Run JUnit Tests
-  run: |
-    java -cp "build/classes:.:json-20231013.jar:junit-4.13.2.jar:hamcrest-core-1.3.jar" \
-      org.junit.runner.JUnitCore ProgProperties.TenantManagerTest ProgSeries.SeriesTest
+    - name: Run JUnit Tests
+      run: |
+        java -cp "build/classes:.:json-20231013.jar:junit-4.13.2.jar:hamcrest-core-1.3.jar" \
+          org.junit.runner.JUnitCore \
+          ProgProperties.TenantManagerTest \
+          ProgSeries.SeriesTest
