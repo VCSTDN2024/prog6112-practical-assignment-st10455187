@@ -91,6 +91,20 @@ public class Tenant {
 
     public void setApartmentType(int apartmentType) {
         this.apartmentType = apartmentType;
+        // Update rent when apartment type changes
+        switch (apartmentType) {
+            case 1:
+                this.rent = 7500.0;
+                break;
+            case 2:
+                this.rent = 10000.0;
+                break;
+            case 3:
+                this.rent = 13000.0;
+                break;
+            default:
+                break;
+        }
     }
 
     public double getRent() {
