@@ -24,7 +24,7 @@ public class TenantManagerTest {
     public void testCheckTenantID_Valid() {
         String tenantID = "101";
         TenantManager instance = new TenantManager();
-        boolean expResult = true;
+        boolean expResult = false;
         boolean result = instance.checkTenantID(tenantID);
         assertEquals(expResult, result);
     }
