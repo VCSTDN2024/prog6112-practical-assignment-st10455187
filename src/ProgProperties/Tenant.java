@@ -1,6 +1,10 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * 
+ *  References:
+ *  Copilot. (2025). GitHub Copilot (GPT-4.1 version). https://copilot.github.com [Accessed 9 September 2025].
+ *  Farrell, J. (2019) Java Programming. 9th ed. Boston: Cengage Learning. [Accessed 30 August 2025].
  */
 package ProgProperties;
 
@@ -8,24 +12,20 @@ package ProgProperties;
  *
  * @author angel
  */
-public class Tenant {
+public class Tenant extends Resident {
 
     // Fields for a tenant
-    private String tenantId;
     private String firstName;
     private String lastName;
     private String tenantEmail;
-    private int apartmentUnit;
     private int apartmentType;
-    private double rent;
 
     // Creating a constructor
     public Tenant(String tenantId, String firstName, String lastName, String tenantEmail, int apartmentUnit, int apartmentType) {
-        this.tenantId = tenantId;
+        super(tenantId, firstName + " " + lastName, apartmentUnit, 0.0);
         this.firstName = firstName;
         this.lastName = lastName;
         this.tenantEmail = tenantEmail;
-        this.apartmentUnit = apartmentUnit;
         this.apartmentType = apartmentType;
 
         // Assign rent based on number of bedrooms
@@ -42,17 +42,11 @@ public class Tenant {
             default:
                 break;
         }
+        super.setRent(this.rent);
     }
 
     // Getters and setters
-    public String getTenantId() {
-        return tenantId;
-    }
-
-    public void setTenantId(String tenantId) {
-        this.tenantId = tenantId;
-    }
-
+    // tenantId, apartmentUnit, and rent are inherited from Resident
     public String getFirstName() {
         return firstName;
     }
@@ -77,13 +71,7 @@ public class Tenant {
         this.tenantEmail = email;
     }
 
-    public int getApartmentUnit() {
-        return apartmentUnit;
-    }
-
-    public void setApartmentUnit(int apartmentUnit) {
-        this.apartmentUnit = apartmentUnit;
-    }
+    // apartmentUnit is inherited from Resident
 
     public int getApartmentType() {
         return apartmentType;
@@ -91,7 +79,7 @@ public class Tenant {
 
     public void setApartmentType(int apartmentType) {
         this.apartmentType = apartmentType;
-        // Update rent when apartment type changes
+        // Update rent when apartment type changes. I got assistance from Copilot for this.
         switch (apartmentType) {
             case 1:
                 this.rent = 7500.0;
@@ -105,11 +93,9 @@ public class Tenant {
             default:
                 break;
         }
+        super.setRent(this.rent);
     }
-
-    public double getRent() {
-        return rent;
-    }
+    // rent is inherited from Resident
 
     // Display tenant details
     public void displayTenant() {
@@ -123,3 +109,9 @@ public class Tenant {
         System.out.println("---------------------------------");
     }
 }
+
+/*
+ *  References:
+ *  Copilot. (2025). GitHub Copilot (GPT-4.1 version). https://copilot.github.com [Accessed 9 September 2025].
+ *  Farrell, J. (2019) Java Programming. 9th ed. Boston: Cengage Learning. [Accessed 30 August 2025].
+ */

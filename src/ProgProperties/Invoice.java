@@ -1,6 +1,9 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ * 
+ * Reference:
+ * Farrell, J. (2019) Java Programming. 9th ed. Boston: Cengage Learning. [Accessed 30 August 2025].
  */
 package ProgProperties;
 
@@ -8,14 +11,10 @@ package ProgProperties;
  *
  * @author angel
  */
-public class Invoice {
+public class Invoice extends Resident {
 
     // Fields of an invoice.
-    private String tenantId;
-    private String tenantName;
-    private int apartmentUnit;
     private int bedrooms;
-    private double rent;
     private double vat;
     private int waterUsed;
     private double levies;
@@ -27,11 +26,8 @@ public class Invoice {
 
     // Creating a constructor
     public Invoice(String tenantId, String tenantName, int apartmentUnit, int bedrooms, double rent, int waterUsed, String invoiceMonth) {
-        this.tenantId = tenantId;
-        this.tenantName = tenantName;
-        this.apartmentUnit = apartmentUnit;
+        super(tenantId, tenantName, apartmentUnit, rent);
         this.bedrooms = bedrooms;
-        this.rent = rent;
         this.vat = rent * vatRate;
         this.levies = leviesAmount;
         this.waterUsed = waterUsed;
@@ -40,10 +36,7 @@ public class Invoice {
     }
 
     // Getters and setters
-    public String getTenantId() {
-        return tenantId;
-    }
-
+    // tenantId, tenantName, apartmentUnit, and rent are inherited from Resident
     public int getWaterUsed() {
         return waterUsed;
     }
@@ -70,18 +63,23 @@ public class Invoice {
     public void displayInvoice() {
         System.out.println(
                 "---------------------------------\n"
-                + "Tenant ID: " + tenantId + "\n"
-                + "Tenant Name: " + tenantName + "\n"
-                + "Apartment Unit: " + apartmentUnit + "\n"
-                + "Bedrooms: " + bedrooms + "\n"
-                + "Month: " + invoiceMonth + "\n"
-                + "Rent: R" + rent + "\n"
-                + "VAT (15%): R" + vat + "\n"
-                + "Water Used: " + waterUsed + " x R" + waterCostPerUnit + " = R" + (waterUsed * waterCostPerUnit) + "\n"
-                + "Levies: R" + levies + "\n"
-                + "Total: R" + total + "\n"
-                + "Due Date: 30 " + invoiceMonth + "\n"
-                + "---------------------------------"
-        );
+                        + "Tenant ID: " + tenantId + "\n"
+                        + "Tenant Name: " + tenantName + "\n"
+                        + "Apartment Unit: " + apartmentUnit + "\n"
+                        + "Bedrooms: " + bedrooms + "\n"
+                        + "Month: " + invoiceMonth + "\n"
+                        + "Rent: R" + rent + "\n"
+                        + "VAT (15%): R" + vat + "\n"
+                        + "Water Used: " + waterUsed + " x R" + waterCostPerUnit + " = R"
+                        + (waterUsed * waterCostPerUnit) + "\n"
+                        + "Levies: R" + levies + "\n"
+                        + "Total: R" + total + "\n"
+                        + "Due Date: 30 " + invoiceMonth + "\n"
+                        + "---------------------------------");
     }
 }
+
+/*
+ *  Reference:
+ *  Farrell, J. (2019) Java Programming. 9th ed. Boston: Cengage Learning. [Accessed 30 August 2025].
+ */

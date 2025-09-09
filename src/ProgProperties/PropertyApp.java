@@ -4,7 +4,6 @@
  */
 package ProgProperties;
 
-import ProgSeries.Series;
 import ProgrammingAssignment.ProgAssignment;
 import java.util.*;
 
@@ -226,7 +225,7 @@ public class PropertyApp {
                     int newApartmentUnit;
                     while (true) {
                         try {
-                            System.out.print("Enter the new apartment unit number: ");
+                            System.out.print("Enter the new apartment unit number (1001 - 2001): ");
                             newApartmentUnit = scn.nextInt();
 
                             if (tm.checkApartmentUnit(newApartmentUnit)) {
@@ -307,7 +306,7 @@ public class PropertyApp {
                     // Prompt for month.
                     String month;
                     while (true) {
-                        System.out.print("Enter month: ");
+                        System.out.print("Enter invoice month: ");
                         month = scn.nextLine().trim();
                         if (!month.isEmpty()) {
                             break;
