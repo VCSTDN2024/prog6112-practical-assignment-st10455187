@@ -14,6 +14,7 @@ Version **1.3** introduces **inheritance**, improved validation, and rent calcul
 ### 🏫 Group: 2
 ### 🔣 Programming Language: Java
 ### ✅ Automation Status:
+
 [![Java CI](https://github.com/VCSTDN2024/prog5121-part-2-st10455187/actions/workflows/TestJava.yml/badge.svg)](https://github.com/VCSTDN2024/prog6112-practical-assignment-st10455187/tree/main/.github/workflows)
 
 ### Youtube Video:<br>
