@@ -2,7 +2,7 @@
 
 
 
-Welcome to **Prog Series & Prog Properties v1.3**!  
+Welcome to **Prog Series & Prog Properties v1.4**!  
 This Java cli-application helps manage **tenants, invoices, and multimedia series**.  
 Version **1.4** introduces **automatic invoice export**, saving every invoice as a `.txt` file.
 
