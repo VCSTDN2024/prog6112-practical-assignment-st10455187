@@ -4,7 +4,7 @@
 
 Welcome to **Prog Series & Prog Properties v1.3**!  
 This Java cli-application helps manage **tenants, invoices, and multimedia series**.  
-Version **1.3** introduces **inheritance**, improved validation, and rent calculation.
+Version **1.4** introduces **automatic invoice export**, saving every invoice as a `.txt` file.
 
 ---
 ### 👩‍💻 Developer: Angel Maile
