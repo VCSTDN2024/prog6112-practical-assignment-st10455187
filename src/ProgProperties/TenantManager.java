@@ -125,7 +125,7 @@ public class TenantManager {
                 invoiceMonth);
 
         invoicesRecord.add(monthlyInvoice);
-        return monthlyInvoice;
+
         // Export or save the invoce as txt file
         monthlyInvoice.generateTxtInvoice();
         return monthlyInvoice;
