@@ -13,9 +13,17 @@ Version **1.4** introduces **automatic invoice export**, saving every invoice as
 ### 📚 Module: PROG6121 1B
 ### 🏫 Group: 2
 ### 🔣 Programming Language: Java
-### ✅ Automation Status:
 
-[![Java CI](https://github.com/VCSTDN2024/prog6112-practical-assignment-st10455187/actions/workflows/test.yml/badge.svg)](https://github.com/VCSTDN2024/prog6112-practical-assignment-st10455187/tree/main/.github/workflows)
+---
+
+### Badges
+[![Build](https://github.com/VCSTDN2024/prog6112-practical-assignment-st10455187/actions/workflows/test.yml/badge.svg)](https://github.com/VCSTDN2024/prog6112-practical-assignment-st10455187/tree/main/.github/workflows)
+[![GitHub release](https://img.shields.io/github/v/release/VCSTDN2024/prog6112-practical-assignment-st10455187)](https://github.com/VCSTDN2024/prog6112-practical-assignment-st10455187/releases/tag/v1.4)
+[![Issues](https://img.shields.io/github/issues/VCSTDN2024/prog6112-practical-assignment-st10455187)](https://github.com/VCSTDN2024/prog6112-practical-assignment-st10455187/issues/2)
+[![Contributors](https://img.shields.io/github/contributors/VCSTDN2024/prog6112-practical-assignment-st10455187)](https://github.com/VCSTDN2024/prog6112-practical-assignment-st10455187/graphs/contributors)
+![Java](https://img.shields.io/badge/java-17-blue)
+
+---
 
 ### YouTube Video:<br>
 [<img width="200" height="200" alt="icons8-youtube-200" src="https://github.com/user-attachments/assets/b9bdad70-739a-4a21-9b7b-03c628183749" />](https://youtu.be/q9liNlHb88w)
