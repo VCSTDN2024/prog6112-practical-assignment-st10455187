@@ -146,6 +146,11 @@ which can lead to conflicts.
 
 Farrell, J. (2019). Java Programming. 9th ed. Boston: Cengage Learning. [Accessed 30 August 2025].
 
+Kubjana S.K. 2025. Learning Unit 2 - Introduction to Inheritence. (Lecture Slides). PROG. Varsity College. Available at: [https://mystudies.iie.edu.za/d2l/le/lessons/47810/topics/3388760] (Accessed Date 01 September 2025). 
+
+Kubjana S.K. 2025. Learning Unit 4 - Exception Handling. (Lecture Slides). PROG. Varsity College. Available at: [https://mystudies.iie.edu.za/d2l/le/lessons/47810/topics/3388765] (Accessed Date 09 September 2025). 
+
+
 Copilot. (2025). GitHub Copilot (GPT-4.1 version). https://copilot.github.com [Accessed 9 September 2025].
 
 ## 📝 Notes
