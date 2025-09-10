@@ -18,7 +18,7 @@ Version **1.4** introduces **automatic invoice export**, saving every invoice as
 [![Java CI](https://github.com/VCSTDN2024/prog6112-practical-assignment-st10455187/actions/workflows/test.yml/badge.svg)](https://github.com/VCSTDN2024/prog6112-practical-assignment-st10455187/tree/main/.github/workflows)
 
 ### Youtube Video:<br>
-[![](https://github.com/user-attachments/assets/93407952-3c2d-42a0-b9a5-eb36013f5e2d)](https://youtu.be/5gGbNDaiwYQ)
+[![](https://github.com/user-attachments/assets/93407952-3c2d-42a0-b9a5-eb36013f5e2d)](https://youtu.be/q9liNlHb88w)
 
 ---
 
