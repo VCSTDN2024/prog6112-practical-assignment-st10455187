@@ -97,7 +97,7 @@ public class Series {
         }
     }
 
-    // Method 7: Exits the prog properties application. But runs the main project as whole instead.
+    // Method 10: Exits the prog properties application. But runs the main project as whole instead.
     public void exitApplication() {
         System.out.println("Thanks for using PROG SERIES!");
         ProgAssignment.main(null);
