@@ -151,6 +151,6 @@ Copilot. (2025). GitHub Copilot (GPT-4.1 version). https://copilot.github.com [A
 ## 📝 Notes
 
 This project was developed between 20 August 2025 and 2 September 2025,
-with improvements allowed until 10 September 2025.
+with an extension period until 10 September 2025.
 
 Future versions may include GUI, unique ID enforcement, storage features and many more...
