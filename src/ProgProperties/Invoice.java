@@ -7,6 +7,8 @@
  */
 package ProgProperties;
 
+import java.io.*;
+
 /**
  *
  * @author angel
@@ -57,6 +59,32 @@ public class Invoice extends Resident {
     // Calculating the total
     private void calculateTotal() {
         this.total = rent + vat + (waterUsed * waterCostPerUnit) + levies;
+    }
+
+    // Method to generate invoice as txt file
+    public void generateTxtInvoice() {
+        String fileName = "Invoice_" + tenantName + "_" + tenantId + "_" + invoiceMonth + ".txt";
+
+        try (FileWriter writer = new FileWriter(fileName)) {
+            writer.write("---------------------------------\n");
+            writer.write("Tenant ID: " + tenantId + "\n");
+            writer.write("Tenant Name: " + tenantName + "\n");
+            writer.write("Apartment Unit: " + apartmentUnit + "\n");
+            writer.write("Bedrooms: " + bedrooms + "\n");
+            writer.write("Month: " + invoiceMonth + "\n");
+            writer.write("Rent: R" + rent + "\n");
+            writer.write("VAT (15%): R" + vat + "\n");
+            writer.write("Water Used: " + waterUsed + " x R" + waterCostPerUnit
+                    + " = R" + (waterUsed * waterCostPerUnit) + "\n");
+            writer.write("Levies: R" + levies + "\n");
+            writer.write("Total: R" + total + "\n");
+            writer.write("Due Date: 30 " + invoiceMonth + "\n");
+            writer.write("---------------------------------\n");
+
+            System.out.println("Invoice saved as: " + fileName);
+        } catch (IOException e) {
+            System.out.println("Error writing invoice file: " + e.getMessage());
+        }
     }
 
     // Display method
