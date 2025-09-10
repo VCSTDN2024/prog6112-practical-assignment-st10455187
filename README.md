@@ -45,6 +45,7 @@ Version **1.3** introduces **inheritance**, improved validation, and rent calcul
 - 📊 Print reports for all tenants and invoices.  
 - ✅ Validation for IDs, emails, apartment units, and bedroom types.  
 - 🏠 Rent calculation based on bedroom type.
+- 📂 **NEW in v1.4:** Automatic export of invoices.
 
 #### Prog Series
 - 🆕 Capture new series.  
